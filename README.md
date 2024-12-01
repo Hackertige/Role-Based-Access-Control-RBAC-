@@ -25,6 +25,17 @@ Name : admin
 email : admin@admin.com
 password : admin
 NOTE : All CRUD APIs require JWT authentication.
+## MongoDB Integration with Postman
+
+This project uses MongoDB as the database to store user data. Here's how to connect MongoDB, run the server, and test the APIs using Postman.
+
+
+### Setting up MongoDB
+1. Install and start MongoDB on your system or use a cloud service like [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+2. Update the `.env` file with the MongoDB connection string:
+   ```env
+   MONGO_URI=mongodb://localhost:27017/myDatabase // for exmaple in this case the database name is models. 
+
 # Folder overview
 validator : Has all necessary logic to validate the User Model fields.
 routes : Has all API endpoints and defines what middlewares should be used for a particular endpoint.
